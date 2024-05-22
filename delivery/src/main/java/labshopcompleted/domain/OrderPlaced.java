@@ -1,10 +1,9 @@
 package labshopcompleted.domain;
 
-import java.util.*;
 import labshopcompleted.domain.*;
 import labshopcompleted.infra.AbstractEvent;
 import lombok.*;
-
+import java.util.*;
 @Data
 @ToString
 public class OrderPlaced extends AbstractEvent {
@@ -17,3 +16,5 @@ public class OrderPlaced extends AbstractEvent {
     private String status;
     private String address;
 }
+
+

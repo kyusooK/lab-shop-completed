@@ -4,10 +4,7 @@ import labshopcompleted.domain.*;
 import labshopcompleted.infra.AbstractEvent;
 import java.util.*;
 import lombok.*;
-import java.time.LocalDate;
 
-
-//<<< DDD / Domain Event
 @Data
 @ToString
 public class DeliveryStarted extends AbstractEvent {
@@ -17,11 +14,10 @@ public class DeliveryStarted extends AbstractEvent {
     private String customerId;
     private Integer quantity;
 
-    public DeliveryStarted( aggregate){
+    public DeliveryStarted(Delivery aggregate){
         super(aggregate);
     }
     public DeliveryStarted(){
         super();
     }
 }
-//>>> DDD / Domain Event
